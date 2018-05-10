@@ -1,8 +1,8 @@
 <?php
 /******************************************************************************
- * Copyright (c) 2017 dev.breithbarbot.name. All rights reserved.             *
+ * Copyright (c) 2018 dev.breithbarbot.name. All rights reserved.             *
  * Author      : Breith Barbot                                                *
- * Updated at  : 13/08/17 08:15                                               *
+ * Updated at  : 10/05/18 16:33                                               *
  * File name   : index.php                                                    *
  * Description :                                                              *
  ******************************************************************************/
