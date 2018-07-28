@@ -17,14 +17,12 @@ function get_ip_address()
         } else {
             $ipadres = $_SERVER['REMOTE_ADDR'];
         }
+    } elseif (getenv('HTTP_X_FORWARDED_FOR') && ip2long(getenv('HTTP_X_FORWARDED_FOR')) !== false) {
+        $ipadres = getenv('HTTP_X_FORWARDED_FOR');
+    } elseif (getenv('HTTP_CLIENT_IP') && ip2long(getenv('HTTP_CLIENT_IP')) !== false) {
+        $ipadres = getenv('HTTP_CLIENT_IP');
     } else {
-        if (getenv('HTTP_X_FORWARDED_FOR') && ip2long(getenv('HTTP_X_FORWARDED_FOR')) !== false) {
-            $ipadres = getenv('HTTP_X_FORWARDED_FOR');
-        } elseif (getenv('HTTP_CLIENT_IP') && ip2long(getenv('HTTP_CLIENT_IP')) !== false) {
-            $ipadres = getenv('HTTP_CLIENT_IP');
-        } else {
-            $ipadres = getenv('REMOTE_ADDR');
-        }
+        $ipadres = getenv('REMOTE_ADDR');
     }
 
     return $ipadres;
