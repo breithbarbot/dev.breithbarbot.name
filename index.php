@@ -27,7 +27,7 @@ function get_ip_address()
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="robots" content="noindex, nofollow">
-        <title>Développement | Breith Barbot</title>
+        <title>Developpement - Breith Barbot</title>
         <style>
             body{background:#242425}.center-Container{position:relative}.absolute-center{height:100%;min-width:400px;overflow:auto;margin:auto;position:fixed;z-index:1;top:0;left:0;bottom:-60px;right:0}#ip-client{background:#424242;color:#242425;position:absolute;bottom:0;right:0;border-top-left-radius:4px;padding:5px;font-weight:500;font-family:monospace;z-index:10}
         </style>
